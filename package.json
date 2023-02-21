@@ -1,5 +1,5 @@
 {
-  "name": "React Course",
+  "name": "rect-live",
   "version": "1.0.0",
   "description": "Nmaste React course",
   "main": "App.js",
@@ -23,5 +23,8 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+   "browserlist": [
+    "last 2 version"
+  ]
 }
