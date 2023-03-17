@@ -1,7 +1,7 @@
 {
   "name": "rect-live",
   "version": "1.0.0",
-  "description": "Nmaste React course",
+  "description": "Namaste React course",
   "scripts": {
     "start":"parcel index.html",
     "build": "parcel build index.html",
