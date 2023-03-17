@@ -2,8 +2,9 @@
   "name": "rect-live",
   "version": "1.0.0",
   "description": "Nmaste React course",
-  "main": "App.js",
   "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
