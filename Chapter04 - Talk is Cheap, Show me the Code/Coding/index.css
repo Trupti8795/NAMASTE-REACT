@@ -1,0 +1,80 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    --text-white: #ffffff;
+    --title-color : #353535;
+    --text-color: #686b78;
+    --light-green: #00ad1d;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+/*Header style*/
+.header {
+    height: 80px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+}
+.nav-items>ul {
+    display: flex;
+}
+.nav-items>ul>li {
+    list-style-type: none;
+    padding: 10px;
+}
+/*Restaurant card style*/
+.restaurant-list {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    width: 254px;
+    padding: 20px 20px 20px;
+    border: 1px solid #fff;
+}
+.card:hover {
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.card .restro-pic>img {
+    width: 100%;
+    height: 160px;
+    object-fit: fill;
+    
+}
+.card .restro-details h3 {
+    color: var(--text-title);
+}
+.restro-details h5 {
+    font-weight: lighter;
+    color: var(--text-color);
+}
+.card .food-details {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.food-details>h4:first-child {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--text-white);
+    background-color: var(--light-green);
+}
+.food-details h4 {
+    color: var(--title-color);
+}
