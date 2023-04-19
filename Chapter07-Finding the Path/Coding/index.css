@@ -1,0 +1,485 @@
+* {
+    margin:0;
+    padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+    --text-white: #ffffff;
+    --text-black: #000000;
+    ----light-black: #171717;
+    --title-color : #353535;
+    --text-color: #686b78;
+    --light-green: #00ad1d;
+    --dark-green: #016034;
+    --primary-color: #D42A58;
+    --border-color: #d3d5df;
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
+/*Header style*/
+.header {
+    height: 80px;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--text-white);
+    box-shadow: 0 15px 40px -20px rgb(40 44 63 / 15%);
+}
+.nav-items>ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.nav-items > ul > li:hover {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-items>ul>li a {
+  color: var(--text-black);
+  font-weight: 700;
+}
+
+
+.nav-items > ul > li .logout-btn,
+.nav-items > ul > li .login-btn {
+  color: var(--text-black);
+  border: none;
+  border-radius: 5px;
+  background-color: Transparent;
+  font-weight: 700;
+  cursor: pointer;
+}
+/*End header css*/
+/*Body CSS*/
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    max-width: 100%
+}
+.search-container .input-type {
+    padding: 15px;
+    width: 40%;
+    color: #000;
+    border: 1px solid var(--border-color);
+    border-radius: 5px 0 0 5px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    outline: none;
+}
+.search-container .search-btn {
+    padding: 15px 20px;
+    margin-left: -4px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    outline: none;
+    cursor: pointer;
+}
+/*Restaurant card style*/
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25
+}
+.card {
+    flex-basis: 250px;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.card:hover {
+    border-color: var(--border-color);
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.card .restro-pic>img {
+    width: 100%;
+    height: 160px;
+    object-fit: fill;
+    
+}
+.card .restro-details h3 {
+    margin-top: 10px;
+    color: var(--text-title);
+}
+.restro-details h5 {
+    font-weight: lighter;
+    color: var(--text-color);
+}
+.card .food-details {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.food-details>h4:first-child {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--text-white);
+    background-color: var(--light-green);
+}
+.food-details h4 {
+    color: var(--title-color);
+}
+
+.footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+/*Shimmer CSS */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .shimmer-card {
+    flex-basis: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-color: var(--border-color);
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+  }
+  .shimmer-title {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .shimmer-tags {
+    width: 80%;
+    margin-top: 4px;
+  }
+  .shimmer-details {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .shimmer-container .shimmer-img {
+    height: 144px;
+    width: 230px;
+  }
+  
+  /*Animation to Shimmer Component Cards */
+  .stroke {
+    height: 15px;
+    background: #777;
+  }
+  .animate {
+    animation: shimmer 3s;
+    animation-iteration-count: infinite;
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
+
+/*About-us page css*/
+.about-pge {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 100px auto 0px;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  
+}
+.about-pge .about-left {
+  width: 50%;
+  padding-left: 10px;
+}
+.about-pge .about-left h1 {
+  font-size: 70px;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+  line-height: 1;
+}
+.about-pge .about-left h4 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+.about-pge .about-left button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  border: none;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about-pge .about-right img {
+  width: 400px
+}
+
+/*contact us page css*/
+.contact-pge {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px auto 30px;
+}
+.contact-pge .contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-pge .contact-right form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.contact-pge .contact-right form textarea {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+.contact-pge .contact-right form button {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-pge .contact-right form .greeting-message {
+  margin-top: 20px;
+  font-size: larger;
+}
+
+/*End contact us page css*/
+
+/*Login Page css*/
+.login-container {
+  width: 380px;
+  margin: 40px auto 0;
+}
+.login-form {
+  padding: 30px;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+}
+.login-form span {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #4b6cb7
+}
+.login-form input  {
+  outline: 0;
+  width: 100%;
+  border: none;
+  margin-bottom: 15px;
+  padding : 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.login-form p.error  {
+  margin-bottom: 10px;
+}
+
+.login-form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: #4b6cb7;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-form button:active {
+  background: #395591;
+}
+
+/*End Login page css*/
+
+/* Restaurant Menu CSS Start */
+.restaurant-menu {
+  margin-top: 80px;
+  min-height: 80vh;
+  width: auto;
+}
+.restaurant-summary {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+ background-color: var(--light-black);
+  color: var(--text-white);
+}
+.restaurant-img {
+  width: 250px;
+  height: 170px;
+  border-radius: 5px;
+}
+.restaurant-summary-details {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 520px;
+  margin: 20px;
+}
+.restaurant-title {
+  font-size: 40px;
+  max-width: 540px;
+  font-weight: 300;
+}
+.restaurant-tags {
+  white-space: nowrap;
+  color: inherit;
+  opacity: 0.7;
+  font-size: 15px;
+  max-width: 540px;
+}
+.restaurant-details {
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  max-width: 340px;
+}
+.restaurant-rating {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  gap: 5px;
+  background-color: var(--dark-green);
+  border-radius: 5px;
+}
+
+.restaurant-menu-content {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-items-container {
+  margin-top: 30px;
+  width: 850px;
+}
+.menu-title-wrap {
+  padding: 20px;
+}
+.menu-count {
+  margin-top: 14px;
+  line-height: 1.3;
+  color: rgba(40, 44, 63, 0.45);
+  letter-spacing: -0.3px;
+  font-size: 1rem;
+}
+
+.menu-items-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  max-height: 250px;
+  padding: 20px;
+  border-bottom: rgba(40, 44, 63, 0.45) 0.5px solid;
+}
+.menu-item-details {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  overflow: hidden;
+}
+
+.item-title {
+  width: 60%;
+}
+.item-desc {
+  margin-top: 14px;
+  line-height: 1.3;
+  color: rgba(40, 44, 63, 0.45);
+  width: 60%;
+  letter-spacing: -0.3px;
+  font-size: 1rem;
+}
+.item-cost {
+  margin-top: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3e4152;
+  width: 40%;
+}
+
+.menu-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+  overflow: hidden;
+}
+.menu-item-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+}
+.add-btn {
+  background-color: var(--text-white);
+  color: var(--light-green);
+  padding: 8px 25px;
+  cursor: pointer;
+  outline: none;
+  border-color: var(--light-green);
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+/* End Restaurant Menu css */
